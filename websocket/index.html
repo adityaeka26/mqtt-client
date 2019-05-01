@@ -3,34 +3,42 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>ON/OFF LED metode MQTT</title>
+        <title>Smart House using MQTT</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <style>
+        body {
+            background: url("assets/img/bg.jpg") !important;
+        }
+        </style>
     </head>
     <body>
-        <div id="tes"></div>
+        <div class="mx-auto shadow-sm" id="main">
+            <div id="main-body">
+                <img src="assets/img/logo.png" id="logo">
+                <h5>Lampu 1</h5>
+                <button class="btn btn-primary" onclick="ledState(1, 1)">ON</button>
+                <button class="btn btn-secondary" onclick="ledState(1, 0)">OFF</button><br><br>
+            
+                <h5>Lampu 2</h5>
+                <button class="btn btn-primary" onclick="ledState(2, 1)">ON</button>
+                <button class="btn btn-secondary" onclick="ledState(2, 0)">OFF</button><br><br>
+            
+                <h5>Lampu 3</h5>
+                <button class="btn btn-primary" onclick="ledState(3, 1)">ON</button>
+                <button class="btn btn-secondary" onclick="ledState(3, 0)">OFF</button><br><br>
 
-        <p>Lampu 1</p>
-        <button onclick="ledState(1, 1)">NYALA</button>
-        <button onclick="ledState(1, 0)">MATI</button><br><br>
-
-        <p>Lampu 2</p>
-        <button onclick="ledState(2, 1)">NYALA</button>
-        <button onclick="ledState(2, 0)">MATI</button><br><br>
-
-        <p>Lampu 3</p>
-        <button onclick="ledState(3, 1)">NYALA</button>
-        <button onclick="ledState(3, 0)">MATI</button><br><br>
-
-        <p>Pesan Kustom</p>
-        <input type="text" id="pesan">
-        <button onclick="custom()">Kirim</button>
-
-        <div id="log">
-            Log : <br>
+                <h5>Log</h5>
+                <div id="log"></div>
+            </div>
+            <div id="main-footer">
+                Copyright &copy; <a href="http://iotstudio.labs.telkomuniversity.ac.id/">IoT Studio Labs</a> 2019
+            </div>
         </div>
 
         <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/mqttws31.min.js" type="text/JavaScript"></script>
         <script src="assets/js/config.js" type="text/JavaScript"></script>
     </body>

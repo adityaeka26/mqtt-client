@@ -1,4 +1,38 @@
+#main {
+    width: 500px;
+    background: white;                
+    text-align: center;
+    margin-top: 20px;
+    border-top: 6px solid #187cb9;
+}
+#main-body {
+    border-bottom: 6px solid #187cb9;
+    padding: 20px 40px;
+}
+#main-footer {
+    background: #242424;
+    color: #eee;
+    font-size: 11px;
+    padding: 6px 0px 7px 11px;
+    text-align: left;
+}
+#main-footer a {
+    color: #eee;
+}
+#log {
+    max-height: 140px;
+    overflow: auto;
+    text-align: left;
+}
+#logo {
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
 button {
-    width: 100px;
-    padding: 12px;
+    width: 120px;
+    margin: 5px 3px;
+}
+.btn-primary {
+    background: #187cb9;
 }
