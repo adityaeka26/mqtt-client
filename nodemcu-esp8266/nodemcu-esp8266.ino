@@ -74,6 +74,23 @@ void MQTTcallback(char* topic, byte* payload, unsigned int length) {
         digitalWrite(0, LOW);
     }
 
+    if (digitalRead(5) == 0) {
+        client.publish("status", "#status1_off");
+    } else if (digitalRead(5) == 1) {
+        client.publish("status", "#status1_on");
+    }
+
+    if (digitalRead(4) == 0) {
+        client.publish("status", "#status2_off");
+    } else if (digitalRead(4) == 1) {
+        client.publish("status", "#status2_on");
+    }
+
+    if (digitalRead(0) == 0) {
+        client.publish("status", "#status3_off");
+    } else if (digitalRead(0) == 1) {
+        client.publish("status", "#status3_on");
+    }
     Serial.println();
     Serial.println("---------------");
 }
