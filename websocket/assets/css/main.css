@@ -13,7 +13,7 @@
     background: #242424;
     color: #eee;
     font-size: 11px;
-    padding: 6px 0px 7px 11px;
+    padding: 7px 0px 8px 12px;
     text-align: left;
 }
 #main-footer a {
@@ -35,4 +35,9 @@ button {
 }
 .btn-primary {
     background: #187cb9;
+}
+.title {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-size: 60px;
 }

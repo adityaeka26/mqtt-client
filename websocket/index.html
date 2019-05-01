@@ -7,25 +7,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fontawesome/css/all.css">
         <style>
-        body {
-            background: url("assets/img/bg.jpg") !important;
-        }
+            body {
+                background: url("assets/img/bg.jpg") !important;
+            }
         </style>
     </head>
     <body>
         <div class="mx-auto shadow-sm" id="main">
             <div id="main-body">
-                <img src="assets/img/logo.png" id="logo">
+                <h1 class="title">Smart House</h1>
                 <h5>Lampu 1</h5>
+                <i id="lampu1" class="fas fa-lightbulb" style="font-size:80px; margin: 5px 0px 10px 0px;"></i><br>
                 <button class="btn btn-primary" onclick="ledState(1, 1)">ON</button>
                 <button class="btn btn-secondary" onclick="ledState(1, 0)">OFF</button><br><br>
             
                 <h5>Lampu 2</h5>
+                <i id="lampu2" class="fas fa-lightbulb" style="font-size:80px; margin: 5px 0px 10px 0px;"></i><br>
                 <button class="btn btn-primary" onclick="ledState(2, 1)">ON</button>
                 <button class="btn btn-secondary" onclick="ledState(2, 0)">OFF</button><br><br>
             
                 <h5>Lampu 3</h5>
+                <i id="lampu3" class="fas fa-lightbulb" style="font-size:80px; margin: 5px 0px 10px 0px;"></i><br>
                 <button class="btn btn-primary" onclick="ledState(3, 1)">ON</button>
                 <button class="btn btn-secondary" onclick="ledState(3, 0)">OFF</button><br><br>
 
@@ -33,7 +37,7 @@
                 <div id="log"></div>
             </div>
             <div id="main-footer">
-                Copyright &copy; <a href="http://iotstudio.labs.telkomuniversity.ac.id/">IoT Studio Labs</a> 2019
+                Copyright &copy; <a href="http://iotstudio.labs.telkomuniversity.ac.id/">Incognito Jaya</a> 2019
             </div>
         </div>
 
